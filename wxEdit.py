@@ -44,10 +44,11 @@ class wxEdit(wx.Frame):
   # 		self.SetAutoLayout(1)
   # 		self.sizer.Fit(self)
   		self.panel = wx.Panel(self, -1)
-  		self.choice = wx.Choice(self.panel,-1, (0,400))
-
-
+  		
   		self.control = wx.TextCtrl (self.panel, -1, value="please input testcases.xml", size=(980,400), style=wx.TE_MULTILINE)
+  		wx.StaticText(self.panel, -1, label="filer condition", pos=(250,400))
+  		wx.StaticText(self.panel, -1, label="hardware", pos=(25,425))
+  		self.choice = wx.Choice(self.panel,-1, (0,450))
   		# self.listview.SetItem()
 
 		self.Show(True)
